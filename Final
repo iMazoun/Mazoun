@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مزون | عالم القهوة</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root {
+            --main-color: #007acc;
+            --accent-color: #005b99;
+            --bg-color: #f0f8ff;
+            --text-color: #002b45;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(90deg, var(--main-color), var(--accent-color));
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+            font-size: 2.8em;
+            font-weight: bold;
+        }
+        header span {
+            font-weight: normal;
+            font-size: 0.6em;
+            display: block;
+            margin-top: 10px;
+        }
+        section {
+            padding: 50px 5%;
+        }
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 3px solid var(--main-color);
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 30px;
+        }
+        .item {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+            text-align: center;
+            padding: 20px 15px;
+        }
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        }
+        .item img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .item a {
+            display: block;
+            margin-top: 14px;
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        footer {
+            background-color: var(--main-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    مزون
+    <span>عالم القهوة بين يديك</span>
+</header>
+
+<section>
+    <h2>أنواع القهوة حول العالم</h2>
+    <div class="grid">
+        <div class="item"><img src="images/espresso.jpg"><a href="espresso.html">إسبريسو</a></div>
+        <div class="item"><img src="images/americano.jpg"><a href="americano.html">أمريكانو</a></div>
+        <div class="item"><img src="images/latte.jpg"><a href="latte.html">لاتيه</a></div>
+        <div class="item"><img src="images/cappuccino.jpg"><a href="cappuccino.html">كابتشينو</a></div>
+        <div class="item"><img src="images/macchiato.jpg"><a href="macchiato.html">ماكياتو</a></div>
+        <div class="item"><img src="images/mocha.jpg"><a href="mocha.html">موكا</a></div>
+        <div class="item"><img src="images/flatwhite.jpg"><a href="flatwhite.html">فلات وايت</a></div>
+        <div class="item"><img src="images/turkish.jpg"><a href="turkish.html">قهوة تركية</a></div>
+        <div class="item"><img src="images/arabic.jpg"><a href="arabic.html">قهوة عربية</a></div>
+        <div class="item"><img src="images/vietnamese.jpg"><a href="vietnamese.html">قهوة فيتنامية</a></div>
+        <div class="item"><img src="images/greek.jpg"><a href="greek.html">قهوة يونانية</a></div>
+        <div class="item"><img src="images/ethiopian.jpg"><a href="ethiopian.html">قهوة إثيوبية</a></div>
+    </div>
+</section>
+
+<section>
+    <h2>أدوات تحضير القهوة</h2>
+    <div class="grid">
+        <div class="item"><img src="images/french_press.jpg"><a href="french_press.html">فرنش برس</a></div>
+        <div class="item"><img src="images/espresso_machine.jpg"><a href="espresso_machine.html">ماكينة إسبريسو</a></div>
+        <div class="item"><img src="images/aeropress.jpg"><a href="aeropress.html">إيروبرس</a></div>
+        <div class="item"><img src="images/chemex.jpg"><a href="chemex.html">كيمكس</a></div>
+        <div class="item"><img src="images/v60.jpg"><a href="v60.html">V60</a></div>
+        <div class="item"><img src="images/moka_pot.jpg"><a href="moka_pot.html">موكا بوت</a></div>
+        <div class="item"><img src="images/siphon.jpg"><a href="siphon.html">سايفون</a></div>
+        <div class="item"><img src="images/ibrik.jpg"><a href="ibrik.html">ركوة / جذوة</a></div>
+        <div class="item"><img src="images/cold_brew.jpg"><a href="cold_brew.html">أداة كولد برو</a></div>
+        <div class="item"><img src="images/scale.jpg"><a href="scale.html">ميزان رقمي</a></div>
+        <div class="item"><img src="images/grinder.jpg"><a href="grinder.html">مطحنة قهوة</a></div>
+        <div class="item"><img src="images/kettle.jpg"><a href="kettle.html">غلاية عنق الإوزة</a></div>
+    </div>
+</section>
+
+<section>
+    <h2>أنواع البن وإيحاءاته</h2>
+    <div class="grid">
+        <div class="item"><img src="images/arabica.jpg"><a href="arabica.html">بن أرابيكا</a></div>
+        <div class="item"><img src="images/robusta.jpg"><a href="robusta.html">بن روبوستا</a></div>
+        <div class="item"><img src="images/liberica.jpg"><a href="liberica.html">بن ليبيريكا</a></div>
+        <div class="item"><img src="images/excelsa.jpg"><a href="excelsa.html">بن إكسيلسا</a></div>
+        <div class="item"><img src="images/yemen.jpg"><a href="yemen.html">بن يمني</a></div>
+        <div class="item"><img src="images/colombia.jpg"><a href="colombia.html">بن كولومبي</a></div>
+        <div class="item"><img src="images/ethiopia.jpg"><a href="ethiopia.html">بن إثيوبي</a></div>
+        <div class="item"><img src="images/brazil.jpg"><a href="brazil.html">بن برازيلي</a></div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 مزون. جميع الحقوق محفوظة.
+</footer>
+
+</body>
+</html>
